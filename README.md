@@ -7,19 +7,12 @@ I am therefore currently looking for a job or an internship as a front-end devel
 5. **Task from the padawans**  
 ```
 module.exports = function getLoveTrianglesCount(preferences = []) {
-
   var count = 0;
-
   for (var i = 0; i < preferences.length; i++) {
-
     var a = preferences[i], b = preferences[a - 1], c = preferences[b - 1];
-
     if (preferences[i] == 'Checked') continue;
-
     if (c == i + 1 && isArrayDigitsDifferent([a, b, c])) {
-
       count++;
-
       preferences[i] = preferences[a - 1] = preferences[b - 1] = 'Checked'
     }
   }
